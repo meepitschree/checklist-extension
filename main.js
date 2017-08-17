@@ -44,13 +44,12 @@ var addTask = function() {
 
   //append task to allTasks
   allTasks.appendChild(task);
-  bindTaskEvents(task, taskEditor);  
-  
+  bindTaskEvents(task, taskEditor); 
   taskInput.value = "";   
 }
 
 var editTask = function() {
-  console.log("editting");
+  console.log("editing");
   var task = this.parentNode;
   
   var editInput = task.querySelector("input[type=text]")

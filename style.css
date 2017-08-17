@@ -1,6 +1,7 @@
 * {
   background: pink;
   color: #333;
+  font-family: Arial;
 }
 
 .container {
@@ -49,6 +50,11 @@ input[type="text"] {
 #intro{
 	color: white;
 }
+
+::-webkit-input-placeholder{
+	color: white;
+	opacity: .5;
+} 
 
 label[for='new-task'] {
   display: block;
