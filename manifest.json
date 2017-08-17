@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "PenCheck",
+  "description": "This extension allows the user to create a work checklist for their browser",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html",
+    "default_title": "PenCheck your tasks!"
+  },
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/",
+    "storage"
+  ]
+}

@@ -1,0 +1,119 @@
+* {
+  background: pink;
+  color: #333;
+}
+
+.container {
+  display: block;
+  width: 400px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li * {
+  float: left;
+}
+
+input button {
+  outline: none;
+}
+
+button {
+  outline: none;
+  background: none;
+  border: 0px;
+  color: #888;
+  font-size: 15px;
+  width: 60px;
+  margin: 10px 0 0;
+  cursor: pointer;
+}
+
+input[type="text"] {
+  outline: none;
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  height: 18px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.3); /*white, .3 opacity*/
+  border-radius: 3px; /* rounded corners */
+  border: none;
+}
+
+
+/* New Task */
+#intro{
+	color: white;
+}
+
+label[for='new-task'] {
+  display: block;
+  margin: 0 0 10px;
+}
+input #new-task {
+  float: left;
+  width: auto;
+}
+
+p button {
+	font-size: 25px;
+}
+
+p button:hover {
+  color: white;
+}
+
+/* Task list */
+li {
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: .5px solid white;
+}
+
+li input[type="checkbox"] {
+  margin: 0 10px;
+  position: relative;
+  top: 15px;
+}
+
+li input[type="checkbox"]:checked + label {
+	 text-decoration: line-through;
+}
+
+li label {
+  font-size: 18px;
+  line-height: 40px;
+  width: 237px;
+  padding: 0 0 0 11px;
+}
+
+/* edits */
+ul li input[type=text] {
+  display:none;
+}
+
+ul li.editMode input[type=text] {
+  display:block;
+}
+
+ul li.editMode label {
+  display:none;
+}
+
+.edit {
+	position: relative;
+}
+.edit:hover {
+	opacity: .3;
+}
+
+.delete {
+	position: fixed;
+}
+.delete:hover {
+	opacity: .3;
+}
