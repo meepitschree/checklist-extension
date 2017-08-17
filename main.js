@@ -32,9 +32,9 @@ var addNewTask = function(userInput) {
 // each element needs appending
   task.appendChild(checkBox);
   task.appendChild(label);
+  task.appendChild(deleteButton);
   task.appendChild(editInput);
   task.appendChild(editButton);
-  task.appendChild(deleteButton);
 
   return task;
 }

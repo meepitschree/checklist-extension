@@ -1,6 +1,6 @@
 * {
   background: pink;
-  color: #333;
+  color: #464749;
   font-family: Arial;
 }
 
@@ -26,8 +26,8 @@ button {
   outline: none;
   background: none;
   border: 0px;
-  color: #888;
-  font-size: 15px;
+  color: #464749;
+  font-size: 2em;
   width: 60px;
   margin: 10px 0 0;
   cursor: pointer;
@@ -36,7 +36,7 @@ button {
 input[type="text"] {
   outline: none;
   margin: 0;
-  font-size: 18px;
+  font-size: 1.5em;
   line-height: 18px;
   height: 18px;
   padding: 10px;
@@ -66,7 +66,7 @@ input #new-task {
 }
 
 p button {
-	font-size: 25px;
+	font-size: 2em;
 }
 
 p button:hover {
@@ -91,7 +91,7 @@ li input[type="checkbox"]:checked + label {
 }
 
 li label {
-  font-size: 18px;
+  font-size: 1.5em;
   line-height: 40px;
   width: 237px;
   padding: 0 0 0 11px;
@@ -118,7 +118,7 @@ ul li.editMode label {
 }
 
 .delete {
-	position: fixed;
+	position: absolute;
 }
 .delete:hover {
 	opacity: .3;
