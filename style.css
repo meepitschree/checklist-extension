@@ -1,4 +1,5 @@
-* {
+
+body {
   background: pink;
   color: #464749;
   font-family: Arial;
@@ -6,6 +7,7 @@
 
 .container {
   display: block;
+  /* display: none; */
   width: 400px;
 }
 

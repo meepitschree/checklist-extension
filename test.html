@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Settings</title>
+  <link href ='test.css' type = "text/css" rel = 'stylesheet' />
+  <link rel="stylesheet" href="fontselect.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous">
+
+    </script>
+
+</head>
+
+<body>
+
+  <div id="container">Settings</div>
+
+  <!-- Background Color -->
+  <div>
+
+    <div id = "colors"> 
+      <p>Background Color:
+      <button id = "color1">1</button>
+      <button id = "color2">2</button>
+      <button id = "color3">3</button>
+      <button id = "color4">4</button>
+      <button id = "color5">5</button>
+        </p>
+    </div>
+
+  </div>
+
+  <!-- Font Selector -->
+  <div>
+    <input id = "font" type = "text" ></input>
+    <script>
+    $(function() {
+      $('#font').fontselect().change(function() {
+          var font = $(this).val().replace(/\+/g,' ');
+          font = font.split(':');
+          $('html').css('font-family', font[0]);
+      });
+    });
+    </script>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+      when an unknown printer took a galley of type and scrambled it to make a type
+      specimen book. It has survived not only five centuries, but also the leap into
+      electronic typesetting, remaining essentially unchanged. It was popularised
+      in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+      passages, and more recently with desktop publishing software like Aldus
+      PageMaker including versions of Lorem Ipsum.</p>
+      <!-- <div class="dropdown">
+        <button onclick="showDrop()" class="dropbtn">Dropdown</button>
+          <div id="myDropdown" class="dropdown-content">
+            <input type="text" placeholder="Search.." id="myInput" onkeyup="filter()">
+          </div>
+        </div> -->
+    <script src='fonts.js'></script>
+    <script src="jquery.fontselect.js"></script>  
+  </div>
+</body>
+
+</html>

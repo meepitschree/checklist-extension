@@ -113,3 +113,49 @@ for(var i = 0; i <  allTasks.children.length; i++) {
     //bind events to list
   bindTaskEvents(allTasks.children[i], taskEditor);
 }
+
+/******************************************
+ * THIS IS THE SETTINGS SCREEN
+ * ****************************************
+ */
+
+
+// The buttons to change background color
+var color1 = document.getElementById("color1");
+color1.addEventListener("click", function() { document.body.style.backgroundColor = "#ff857a";
+});
+
+var color2 = document.getElementById("color2");
+color2.addEventListener("click", function() { document.body.style.backgroundColor = "#ffe47a";
+});
+
+var color3 = document.getElementById("color3");
+color3.addEventListener("click", function() { document.body.style.backgroundColor = "#a0f98b";
+});
+
+var color4 = document.getElementById("color4");
+color4.addEventListener("click", function() { document.body.style.backgroundColor = "#8be5f9";
+});
+
+var color5 = document.getElementById("color5");
+color5.addEventListener("click", function() { document.body.style.backgroundColor = "#d8a4f4";
+});
+
+/************************************
+ * THIS TOGGLES THE SCREENS
+ * **********************************
+ */
+
+var shownMain = document.getElementById('main');
+
+// var arr = Array.from(document.getElementsByClassName("navlink"));
+
+// for (var i = 0; i < arr.length; i++) {
+//     arr[i].addEventListener('click', function() {
+//         var mDiv = document.getElementById(this.id.replace("nav", "main"));
+//         shownMain.className = "maindiv"; mDiv.className = "maindiv mainactive";
+//         shownMain = mDiv;
+//         selectedNav.className = "navlink"; this.className = "navlink navactive";
+//         selectedNav = this;
+//     });
+// }
