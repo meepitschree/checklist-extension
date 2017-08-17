@@ -148,6 +148,7 @@ color5.addEventListener("click", function() { document.body.style.backgroundColo
 
 var shownMain = document.getElementById('main');
 
+
 // var arr = Array.from(document.getElementsByClassName("navlink"));
 
 // for (var i = 0; i < arr.length; i++) {

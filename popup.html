@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<html>
 <head> 
-<!--stylesheets-->
+  <!--stylesheets-->
   <link rel="stylesheet" href="style.css" type="text/css"> 
   <link rel="stylesheet" href="fontselect.css">  
-<!--scripts-->
-<script src="jquery-3.2.1.js"></script>  
-<script src="jquery.fontselect.js"></script> 
-
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+  <!--scripts-->
+  <script src="jquery-3.2.1.js"></script>  
+  <script src="jquery.fontselect.js"></script> 
 </head>
 
 <body>
@@ -22,17 +19,21 @@
         <li>
         <input type="checkbox"><label id="intro">Have a nice day! - PenCheck </label>
         <button class="edit"></button>
-		<button class="delete"></button>
-		</li>
+		    <button class="delete"></button>
+		    </li>
       </ul>
+      <!-- Settings Button -->
+      <div> 
+        <button class = "toggle"> S </button>
+      </div>
     </div>
+
 
     <!-- SETTINGS PAGE -->
     <div id="settings" class="container">Settings</div>
     
       <!-- Background Color -->
       <div>
-    
         <div id = "colors"> 
           <p>Background Color:
           <button id = "color1">1</button>
@@ -42,16 +43,13 @@
           <button id = "color5">5</button>
             </p>
         </div>
-    
       </div>
     
       <!-- Font Selector -->
       <div>
         <input id = "font" type = "text" ></input>
-        </div>
+      </div>
 
     <script type="text/javascript" src="main.js"></script>
     <script src="fontjquery.js"></script>
-
-  </body>
-  </html>
+</body>
