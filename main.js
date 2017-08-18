@@ -97,7 +97,7 @@ var bindTaskEvents = function(currTask, checkBoxEventHandler) {
   //function binding
   editButton.onclick = editTask;
   deleteButton.onclick = deleteTask;
-  checkBox.onchange = checkBoxEventHandler;
+  //checkBox.onchange = checkBoxEventHandler;
 }
 
 
@@ -121,6 +121,7 @@ for(var i = 0; i <  allTasks.children.length; i++) {
 
 
 // The buttons to change background color
+
 var color1 = document.getElementById("color1");
 color1.addEventListener("click", function() { document.body.style.backgroundColor = "#ff857a";
 });
@@ -141,22 +142,24 @@ var color5 = document.getElementById("color5");
 color5.addEventListener("click", function() { document.body.style.backgroundColor = "#d8a4f4";
 });
 
+var color6 = document.getElementById("color6");
+color6.addEventListener("click", function() { document.body.style.backgroundColor = "#FFC0CB";
+});
+
+
 /************************************
  * THIS TOGGLES THE SCREENS
  * **********************************
  */
 
-var shownMain = document.getElementById('main');
+var toggler = document.getElementById('toggler');
 
-
-// var arr = Array.from(document.getElementsByClassName("navlink"));
-
-// for (var i = 0; i < arr.length; i++) {
-//     arr[i].addEventListener('click', function() {
-//         var mDiv = document.getElementById(this.id.replace("nav", "main"));
-//         shownMain.className = "maindiv"; mDiv.className = "maindiv mainactive";
-//         shownMain = mDiv;
-//         selectedNav.className = "navlink"; this.className = "navlink navactive";
-//         selectedNav = this;
-//     });
-// }
+toggler.onclick = function() {
+    var div = document.getElementById('settings');
+    if (div.style.display !== 'none') {
+        div.style.display = 'none';
+    }
+    else {
+        div.style.display = 'block';
+    }
+};

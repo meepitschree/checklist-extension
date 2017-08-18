@@ -234,7 +234,7 @@
 
     var settings = {
       style: 'font-select',
-      placeholder: 'Select a font',
+      placeholder: 'select a font',
       lookahead: 2,
       api: 'https://fonts.googleapis.com/css?family='
     };

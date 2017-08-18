@@ -9,10 +9,33 @@
 </head>
 
 <body>
+	<!-- SETTINGS PAGE -->
+	<img src="settings.png" id="toggler" width="18px">
+	
+    <div id="settings">
+      <!-- Background Color -->
+        <div id = "colors"> 
+          <img src = "color6.png" id = "color6" width="30px"></button>
+          <img src = "color1.png" id = "color1" width="30px"></button>
+          <img src = "color2.png" id = "color2" width="30px"></button>
+          <img src = "color3.png" id = "color3" width="30px"></button>
+          <img src = "color4.png" id = "color4" width="30px"></button>
+          <img src = "color5.png" id = "color5" width="30px"></button>
+        </div>
+
+         <!-- Font Selector -->
+      	<div>
+        	<input id = "font" type = "text" ></input>
+      	</div>
+    </div>
+
     <!-- MAIN PAGE -->
     <div id = "main" class="container">
+
+      <img src="pencheck.gif" id="logo">
+
       <p>
-        <input id="new-task" type="text" placeholder="type something!"> <button>add</button>
+        <input id="new-task" type="text" placeholder="type something!"> <button> <!--<img src="pencheck_trimmed.png" id="logo">-->add</button>
       </p>
 
       <ul id="tasks">
@@ -22,34 +45,9 @@
 		    <button class="delete"></button>
 		    </li>
       </ul>
-      <!-- Settings Button -->
-      <div> 
-        <button class = "toggle"> S </button>
-      </div>
     </div>
-
-
-    <!-- SETTINGS PAGE -->
-    <div id="settings" class="container">Settings</div>
-    
-      <!-- Background Color -->
-      <div>
-        <div id = "colors"> 
-          <p>Background Color:
-          <button id = "color1">1</button>
-          <button id = "color2">2</button>
-          <button id = "color3">3</button>
-          <button id = "color4">4</button>
-          <button id = "color5">5</button>
-            </p>
-        </div>
-      </div>
-    
-      <!-- Font Selector -->
-      <div>
-        <input id = "font" type = "text" ></input>
-      </div>
 
     <script type="text/javascript" src="main.js"></script>
     <script src="fontjquery.js"></script>
 </body>
+</html>
