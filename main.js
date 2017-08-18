@@ -20,6 +20,7 @@ document.body.onload = function() {
     }
   });
 }
+
 var taskInput = document.getElementById("new-task");
 var addButton = document.getElementsByTagName("button")[0];
 var allTasks = document.getElementById("tasks");
@@ -29,7 +30,7 @@ var currColor = document.body.style.backgroundColor;
 
 //add new task to list
 var addNewTask = function(userInput) {
-
+  
   //new list item
   var task = document.createElement("li");
 
@@ -78,6 +79,7 @@ var addExistingTask = function(userInput) {
 }
 
 var addTask = function() {
+  if (taskInput.value === "") continue;
   var task = addNewTask(taskInput.value);
 
   //append task to allTasks
