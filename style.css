@@ -52,7 +52,11 @@ input[type="text"] {
 
 /* New Task */
 #intro{
+  width: auto;
+  display: fixed;
+  text-align: center;
 	color: white;
+  font-style: italic;
 }
 
 ::-webkit-input-placeholder{

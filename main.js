@@ -245,7 +245,7 @@ $.ajax( {
   url: "http://quotes.rest/qod.json?category=inspire",
   success: function(data) {
     var qod = data.contents.quotes[0].quote;
-    document.getElementById("intro").innerText = qod;
+    document.getElementById("intro").innerText = '"'+ qod +'"';
   }
   }
 );
