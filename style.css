@@ -56,6 +56,7 @@ input[type="text"] {
 }
 
 ::-webkit-input-placeholder{
+  color:white;
 	opacity: .5;
 } 
 
@@ -175,6 +176,29 @@ ul li.editMode label {
 	position: fixed;
 	width: 60px;
 	margin-left: 78vw;
+}
+
+#logo:hover {
+  animation: bounce .7s;
+  transition: .1s;
+}
+
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  
 }
 
 
