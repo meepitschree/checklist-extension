@@ -249,3 +249,10 @@ $.ajax( {
   }
   }
 );
+
+/* add input upon enter key press */
+$("#new-task").keyup(function(event){
+    if(event.keyCode == 13){
+        $("#addbtn").click();
+    }
+});
