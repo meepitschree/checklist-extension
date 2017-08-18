@@ -1,3 +1,11 @@
+document.body.onload = function() {
+  chrome.storage.sync.get(null, function(items) {
+    console.log(items);
+    for (var key in items) {
+      addExistingTask(items[key]);
+    }
+  });
+}
 var taskInput = document.getElementById("new-task");
 var addButton = document.getElementsByTagName("button")[0];
 var allTasks = document.getElementById("tasks");
@@ -36,7 +44,21 @@ var addNewTask = function(userInput) {
   task.appendChild(editInput);
   task.appendChild(editButton);
 
+  //add to storage
+  chrome.storage.sync.set({[userInput]: userInput}, function() {
+    console.log("stored");
+  });
+
   return task;
+}
+
+var addExistingTask = function(userInput) {
+  var task = addNewTask(userInput);
+
+  //append task to allTasks
+  allTasks.appendChild(task);
+  bindTaskEvents(task, taskEditor); 
+  taskInput.value = "";   
 }
 
 var addTask = function() {
@@ -79,7 +101,12 @@ var deleteTask = function() {
   console.log("Delete task...");
   var task = this.parentNode;
   var ul = task.parentNode;
-  
+  var editInput = task.querySelector("label");
+  var keyStr = editInput.innerText;
+  console.log(keyStr);
+  chrome.storage.sync.remove(keyStr, function() {
+    console.log("deleted from storage");
+  });
   ul.removeChild(task);
 }
 
