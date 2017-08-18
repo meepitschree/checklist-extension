@@ -100,10 +100,9 @@ li input[type="checkbox"]:checked + label {
 
 li label {
   font-size: 1.5em;
-  line-height: 20px;
+  line-height: 40px;
   width: 237px;
-  padding-top: 10px;
-  padding-bottom: 5px;
+  padding: 0 0 0 11px;
 }
 
 /* edits */
@@ -178,27 +177,5 @@ ul li.editMode label {
 	margin-left: 78vw;
 }
 
-@keyframes bounce {
-	0%, 20%, 60%, 100% {
-		-webkit-transform: translateY(0);
-		transform: translateY(0);
-	}
-
-	40% {
-		-webkit-transform: translateY(-10px);
-		transform: translateY(-10px);
-	}
-
-	80% {
-		-webkit-transform: translateY(-8px);
-		transform: translateY(-8px);
-	}
-}
-
-
-#logo:hover {
-	animation: bounce .7s;
-	transition: .1s;
-}
 
 
