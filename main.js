@@ -98,8 +98,17 @@ var editTask = function() {
   //edit editMode
   if(containsClass) {
     label.innerText = editInput.value;
+    console.log('this is the if clause');
+    chrome.storage.sync.set({[label.innerText]: label.innerText}, function() {
+      console.log("stored while editing");
+    });
   } else {
     editInput.value = label.innerText;
+    console.log('this is else clause');
+    var keyStr = label.innerText;
+    chrome.storage.sync.remove(keyStr, function() {
+      console.log("deleted while editing");
+    });
   }
   
   // Toggle .editMode on the parent
