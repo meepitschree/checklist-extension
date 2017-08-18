@@ -84,7 +84,7 @@ p button:hover {
 /* Task list */
 li {
   overflow: hidden;
-  padding: 20px 0;
+  padding: 0.5em 0;
   border-bottom: .5px solid white;
 }
 
