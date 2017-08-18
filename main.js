@@ -236,3 +236,16 @@ toggler.onclick = function() {
     }
 };
 
+/*************************************
+ * THIS IS THE QUOTE GENERATOR********
+ * *********************************
+ */
+$.ajax( {
+  type: 'GET', 
+  url: "http://quotes.rest/qod.json?category=inspire",
+  success: function(data) {
+    var qod = data.contents.quotes[0].quote;
+    document.getElementById("intro").innerText = qod;
+  }
+  }
+);
