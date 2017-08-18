@@ -79,7 +79,7 @@ var addExistingTask = function(userInput) {
 }
 
 var addTask = function() {
-  if (taskInput.value === "") continue;
+  if (taskInput.value === "") return;
   var task = addNewTask(taskInput.value);
 
   //append task to allTasks
