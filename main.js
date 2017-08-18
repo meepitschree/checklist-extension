@@ -106,7 +106,7 @@ var editTask = function() {
     editInput.value = label.innerText;
     console.log('this is else clause');
     var keyStr = label.innerText;
-    chrome.storage.sync.remove(keyStr, function() {
+    chrome.storage.sync.remove([keyStr], function() {
       console.log("deleted while editing");
     });
   }
